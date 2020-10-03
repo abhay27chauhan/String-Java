@@ -1,5 +1,5 @@
 // reverse string word by word and remove trailing spaces, if any;
-
+import java.util.Scanner;
 class reverseString{
 
     public static String reverseString(String s){
@@ -32,8 +32,11 @@ class reverseString{
         return ans;
     }
 
-    public static void main(String[] args){
-        String s = "  The sky is blue  ";
+    public static void main(String[] args)
+    {
+        System.out.println("enter the string");
+	   Scanner sc= new Scanner(System.in);
+	   String s=sc.nextLine();
         System.out.println(reverseString(s));
     }
 }
